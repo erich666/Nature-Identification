@@ -1,0 +1,724 @@
+<html>
+<head>
+   <meta name="description" content="Wildflower Quiz">
+   <meta name="keywords" content="wildflower, flower, identification, field guide, quiz, test">
+   <title>Wildflower Quiz</title>
+</head>
+<body>
+<h1>Wildflower Quiz</h1>
+
+
+This page lets you set up a quiz about wildflowers that you can take. You can tailor it to your particular preferences, or just hit "Create a Quiz"
+and take a general test. There are also quiz programs for <a href="../trees/treequiz.html">trees</a> and <a href="../birds/birdquiz.html">birds</a>.
+<P>
+If you are more interested in identifying wildflowers, see the <a href="flowers.html">wildflower identification page</a>.
+
+<form action="http://www.realtimerendering.com/cgi-bin/flowers.cgi" method="POST" name="Wildflower">
+<P>
+<INPUT type="submit" value="     Create a Quiz     " align="middle">
+<P>
+How many questions would you like to answer?<BR>
+&nbsp;&nbsp;<SELECT NAME="quiz"> 
+<OPTION>2 
+<OPTION SELECTED>5 
+<OPTION>10 
+<OPTION>20 
+<OPTION>50 
+</SELECT>
+
+
+<P>
+You can choose the types of questions you want to answer:<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="qt" value="1" CHECKED> Yes/No questions<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="qt" value="2" CHECKED> Which wildflower has this characteristic?<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="qt" value="3" CHECKED> Which characteristic does this wildflower have?<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="qt" value="4" CHECKED> For these two characteristics, which wildflower has both?<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="qt" value="5" CHECKED> For these two wildflowers, which characteristic is common to both?<BR>
+<P>
+You can select which characteristics you wish to be quizzed on:<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="c" value="1-7" CHECKED>Petal-like Parts<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="c" value="8-11" CHECKED>Flower Arrangement<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="c" value="12-17" CHECKED>Flower Width<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="c" value="18-22" CHECKED>Flower Color<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="c" value="23-28" CHECKED>When in Bloom<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="c" value="29-31" CHECKED>Plant Height<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="c" value="32-33" CHECKED>Leaf Petiole<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="c" value="34-36" CHECKED>Leaf Arrangement<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="c" value="37-40" CHECKED>Leaf Edges<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="c" value="41-42" CHECKED>Leaf Veins Appear<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="c" value="43-45" CHECKED>Simple Leaves (one per stem)<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="c" value="46-48" CHECKED>Compound Leaves (many per stem)<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="c" value="49-51" CHECKED>Stem<BR>
+<P>
+<INPUT type="submit" value="     Create a Quiz     " align="middle"> or you can clear your choices by hitting <input type="reset" name="mybutton" value="Reset">
+<P>
+You can choose what types of wildflowers you would like to be quizzed on, as a group.
+Checking a characteristic in a group means wildflowers in that group will be used for making questions.
+If you check a number of characteristics in one group (e.g. Petal-like Parts), wildflowers with either of those characteristics will
+be part of the group (not just wildflowers with both characteristics). If you check characteristics in different
+groups, the set of wildflowers for each separate group is found, then wildflowers that are common to all sets are used.
+Technically, within a group it's
+"characteristics OR char. OR char." and overall it's "group AND group AND group".
+<P>
+Yes, this all sounds confusing, but the idea is that you can choose to be tested on wildflowers that have in common
+two or more specific sets of characteristics from different groups. For example, if this program were for house types,
+there might be two groups, <i>Number of Stories</i> and <i>Exterior Wall Material</i>. You could pick the characteristic
+"one-story" from the first group, and "stucco" and "brick" from the second, and the group of all houses used would then be
+"one-story AND (either stucco OR brick)".
+Try it out and see.
+<P>
+Check the characteristics below:
+<BR>
+<i>Petal-like Parts</i><BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="1"> 3 petals<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="2"> 4 petals<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="3"> 5 petals<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="4"> 6 petals<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="5"> in a head (7 or more petals): cluster of stalkless (or nearly stalkless) flowers<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="6"> tubular petals<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="7"> irregular petals: lipped, lopsided, not symmetrical<BR>
+<i>Flower Arrangement</i><BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="8"> single flower on stem<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="9"> several flowers on stem<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="10"> cluster or spike of flowers (a spike is a long cluster, with the flowers along the stem)<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="11"> in an umbel (flowers in an umbrella-like cluster, with stalks radiating from one point)<BR>
+<i>Flower Width</i><BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="12"> 1/8 of an inch or less flower width<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="13"> 1/8 to 3/8 inches flower width<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="14"> 3/8 to 5/8 inches flower width<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="15"> 5/8 to 1 inch flower width<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="16"> 1 to 2 inches flower width<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="17"> 2 inches or more flower width<BR>
+<i>Flower Color</i><BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="18"> whitish flower color<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="19"> pink to red flower color<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="20"> yellow to orange flower color<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="21"> brownish or greenish flower color<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="22"> blue to purple flower color<BR>
+<i>When in Bloom</i><BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="23"> blooms in April or earlier<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="24"> blooms in May<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="25"> blooms in June<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="26"> blooms in July<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="27"> blooms in August<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="28"> blooms in September or later<BR>
+<i>Plant Height</i><BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="29"> plant height one foot or less<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="30"> plant height one foot to two feet<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="31"> plant height two feet or more<BR>
+<i>Leaf Petiole</i><BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="32"> leaf petiole present (has a leafstalk)<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="33"> leaf petiole absent (has no leafstalk)<BR>
+<i>Leaf Arrangement</i><BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="34"> alternate leaf arrangement on the stem<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="35"> opposite one another leaf arrangement on the stem<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="36"> arrangement of leaves on stem is whorled (three or more from a point)<BR>
+<i>Leaf Edges</i><BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="37"> smooth leaf edges<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="38"> leaf edge has at least 4 teeth per inch<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="39"> irregular leaf edge<BR>
+
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="40"> deeply cut leaf edge<BR>
+<i>Leaf Veins Appear</i><BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="41"> parallel leaf veins<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="42"> branched leaf veins<BR>
+<i>Simple Leaves (one per stem)</i><BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="43"> simple leaves about as long as wide<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="44"> simple leaves about 1 1/2 to 5 times as long as wide<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="45"> simple leaves over 5 times as long as wide<BR>
+<i>Compound Leaves (many per stem)</i><BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="46"> compound leaves are trifoliate - three leaflets radiating from a point<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="47"> compound leaves are pinnate - leaflets arranged along a midrib<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="48"> compound leaves are palmate - leaflets or lobes fan from one point<BR>
+<i>Stem</i><BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="49"> stem creeps or twines<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="50"> stem is hairy or spiny<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="51"> stem is square<BR>
+<P>
+<INPUT type="submit" value="     Create a Quiz     " align="middle"> or you can clear your choices by hitting <input type="reset" name="mybutton" value="Reset">
+<P>
+Finally, if you're really into tailoring, you can pick the wildflowers on which to be tested.
+These will be added to any wildflowers selected using the characteristics above.
+Don't check any if you want to be tested on all flowers.
+Otherwise, check the ones you want:
+<P>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="1"> Bur-Reed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="2"> Pickerelweed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="3"> Golden Club<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="4"> Sweetflag/Calamus<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="5"> Wild Calla/Water-Arum<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="6"> Skunk Cabbage<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="7"> Jack-in-the-Pulpit/Indian Turnip<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="8"> Green Dragon/Dragon Arum<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="9"> Yellow-Eyed Grass<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="10"> Water-Plantain<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="11"> Broad-Leaved Arrowhead<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="12"> Virginia Dayflower<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="13"> Asiatic Dayflower<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="14"> Ohio Spiderwort<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="15"> Prairie Trillium<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="16"> Toadshade/Sessile Trillium<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="17"> Red or Purple Trillium/Wakerobin<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="18"> Snow or Dwarf White Trillium<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="19"> Nodding Trillium<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="20"> Drooping or Gleason's Trillium<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="21"> Painted Trillium<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="22"> Large-Flowered or White Trillium<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="23"> Dutchman's-Pipe<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="24"> Indian Cucumber-Root<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="25"> Carrion-Flower<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="26"> Wild Oats/Sessile Bellwort<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="27"> Large-Flowered Bellwort<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="28"> Perfoliate Bellwort<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="29"> Twisted-Stalk/White Mandarin<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="30"> Rose Twisted-Stalk<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="31"> Hairy Solomon's-Seal<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="32"> Great Solomon's-Seal<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="33"> Starry False Solomon's-Seal<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="34"> False Solomon's-Seal<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="35"> Three-Leaved False Solomon's-Seal<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="36"> Wild Lily-of-the-Valley<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="37"> False Hellebore/Indian Poke<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="38"> Bunchflower<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="39"> Fly Poison<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="40"> Galax/Beetleweed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="41"> Colicroot/Stargrass<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="42"> False Asphodel<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="43"> Wild Hyacinth<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="44"> Star-of-Bethlehem<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="45"> Wild Garlic<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="46"> Nodding Wild Onion<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="47"> Wild Onion<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="48"> Wild Leek<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="49"> White Clintonia<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="50"> Clintonia/Corn-Lily<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="51"> White Trout-Lily<BR>
+
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="52"> Trout-Lily<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="53"> Michigan Lily<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="54"> Turk's-Cap Lily<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="55"> Canada or Wild Yellow Lily<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="56"> Wood Lily<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="57"> Day-Lily<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="58"> Yellow Iris/Water Flag<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="59"> Larger Blue Iris<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="60"> Wild Iris/Blue Flag (virginica)<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="61"> Dwarf Lake Iris<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="62"> Blue-Eyed Grass<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="63"> Stargrass<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="64"> Arethusa/Dragon's-Mouth<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="65"> Rose Pogonia/Snake-Mouth<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="66"> Small White Lady's-Slipper<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="67"> Ram's-Head Lady's-Slipper<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="68"> Showy or Queen Lady's-Slipper<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="69"> Yellow Lady's-Slipper<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="70"> Moccasin-Flower/Pink Lady's-Slipper<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="71"> Calypso/Fairy-Slipper/Fairy Orchid<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="72"> Striped Coralroot<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="73"> Spotted or Large Coralroot<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="74"> Northern or Early Coralroot<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="75"> Calopogon/Grass-Pink<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="76"> Nodding Ladies'-Tresses<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="77"> Ragged Fringed Orchis<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="78"> White Fringed Orchis<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="79"> Yellow Fringed Orchis<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="80"> Small Purple Fringed Orchis<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="81"> Long Bracted or Rein Orchis<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="82"> Round-Leaved Orchis<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="83"> Showy Orchis<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="84"> Large Twayblade<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="85"> Heartleaf Twayblade<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="86"> Downy Rattlesnake-Plantain<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="87"> Green Adder's-Mouth<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="88"> Wild Ginger<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="89"> Bunchberry/Dwarf Cornel<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="90"> Whitlow-Grass<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="91"> Hoary Alyssum<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="92"> Field Pennycress<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="93"> Watercress<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="94"> Shepherd's Purse<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="95"> Lyre-Leaved Rock Cress<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="96"> Poor-Man's-Pepper/Peppergrass<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="97"> Spring or Bitter Cress<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="98"> Purple Cress<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="99"> Black Mustard<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="100"> Yellow or Marsh Cress<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="101"> Winter Cress/Yellow Rocket<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="102"> Cut-Leaved Toothwort<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="103"> Toothwort/Pepperwort/Crinkleroot<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="104"> Dame's or Sweet Rocket<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="105"> Sea-Rocket<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="106"> Virginia Meadow-Beauty<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="107"> Fireweed/Great Willow-Herb<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="108"> Purple-Leaved Willow-Herb<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="109"> Sundrops (perennis)<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="110"> Narrow-Leaved Sundrops (fruticosa)<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="111"> Common Evening-Primrose<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="112"> Enchanter's Nightshade<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="113"> Small Cleavers/Sweet-Scented Bedstraw<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="114"> Shining Bedstraw<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="115"> Rough Bedstraw<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="116"> Cleavers/Goose Grass<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="117"> Yellow Wild Licorice<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="118"> Fragrant Bedstraw<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="119"> Yellow Bedstraw<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="120"> Northern Bedstraw<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="121"> Bluets/Quaker Ladies<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="122"> Long-Leaved Bluet<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="123"> Partridgeberry<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="124"> Small Cranberry<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="125"> Large or American Cranberry<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="126"> Labrador-Tea<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="127"> Bearberry<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="128"> Pale or Bog Laurel<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="129"> Creeping Snowberry<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="130"> Wintergreen/Checkerberry<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="131"> Trailing Arbutus<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="132"> Closed or Bottle Gentian<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="133"> Stiff Gentian<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="134"> Downy or Sand Gentian<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="135"> Smaller Fringed Gentian<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="136"> Fringed Gentian<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="137"> Spurred Gentian<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="138"> Rose-Pink<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="139"> Buckbean/Bogbean<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="140"> Indian-Pipe<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="141"> Pinesap<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="142"> One-Sided Pyrola<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="143"> Shinleaf<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="144"> Round-Leaved Pyrola<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="145"> One-Flowered Wintergreen<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="146"> Spotted Wintergreen<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="147"> Pipsissewa/Prince's-Pine<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="148"> Carolina or Broad-Leaved Spring Beauty<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="149"> Spring-Beauty<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="150"> Common Wood-Sorrel<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="151"> Violet Wood-Sorrel<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="152"> Yellow Wood-Sorrel<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="153"> Mossy Stonecrop/Wallpepper<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="154"> Wild Stonecrop<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="155"> False Heather/Hudsonia/Poverty Grass<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="156"> Frostweed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="157"> Grooved Yellow Flax<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="158"> Great St. Johnswort<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="159"> Shrubby St. Johnswort<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="160"> Common St. Johnswort<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="161"> Marsh St. Johnswort<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="162"> St. Andrew's Cross<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="163"> Bristly Sarsaparilla<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="164"> Wild Sarsaparilla<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="165"> Spikenard<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="166"> Dwarf Ginseng<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="167"> Ginseng<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="168"> Cow-Parsnip<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="169"> Yellow Pimpernel<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="170"> Golden Alexanders<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="171"> Meadow-Parsnip<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="172"> Black Snakeroot<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="173"> Honewort/Wild Chervil<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="174"> Water-Hemlock/Spotted Cowbane<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="175"> Cowbane<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="176"> Water-Parsnip (suave)<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="177"> Wild Parsnip<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="178"> Angelica/Alexanders<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="179"> Hairy Sweet Cicely (claytoni)<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="180"> Sweet Cicely/Anise Root(longistylis)<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="181"> Poison Hemlock<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="182"> Wild Carrot/Queen Anne's Lace<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="183"> Caraway<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="184"> Harbinger-of-Spring/Pepper-and-Salt<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="185"> Flowering Spurge<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="186"> Cypress Spurge<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="187"> Cheeses (rotundifolia)<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="188"> Common Round-Leaved Mallow/Cheeses<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="189"> Musk Mallow<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="190"> Crimson-Eyed Rose-Mallow<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="191"> Marsh Mallow<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="192"> Storksbill/Alfilaria<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="193"> Herb-Robert<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="194"> Wild Geranium<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="195"> Dewdrop/Star Violet/Dalibarda<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="196"> Barren Strawberry<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="197"> Wood Strawberry<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="198"> Common or Wild Strawberry<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="199"> Three-Toothed Cinquefoil<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="200"> Rough Cinquefoil<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="201"> Common Cinquefoil<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="202"> Dwarf Cinquefoil<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="203"> Rough-Fruited Cinquefoil<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="204"> Shrubby Cinquefoil<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="205"> Marsh Cinquefoil<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="206"> Tall Cinquefoil<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="207"> Silverweed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="208"> Silvery Cinquefoil<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="209"> Agrimony (gryposepala)<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="210"> Canadian Burnet<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="211"> Bowman's Root/Indian Physic<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="212"> Rose<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="213"> Purple Flowering Raspberry<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="214"> Dwarf Red Bramble/Dwarf Blackberry<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="215"> Queen-of-the-Prairie<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="216"> White Avens<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="217"> Yellow Avens<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="218"> Water or Purple Avens<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="219"> Long Plumed Purple Avens<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="220"> Kidneyleaf or Small-Flowered Buttercup<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="221"> Early Buttercup<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="222"> Creeping Buttercup<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="223"> Swamp Buttercup<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="224"> Common or Tall Buttercup<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="225"> Hooked Buttercup/Hooked Crowfoot<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="226"> Marsh-Marigold/Cowslip<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="227"> Goldthread<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="228"> Round-Lobed Hepatica<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="229"> Sharp-Lobed Hepatica<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="230"> Early Meadow-Rue<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="231"> Purple Meadow-Rue<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="232"> False Rue-Anemone<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="233"> Rue-Anemone<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="234"> Wood Anemone/Windflower<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="235"> Thimbleweed/Tall Anemone<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="236"> Long-Headed Thimbleweed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="237"> Canada Anemone<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="238"> Pasqueflower<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="239"> Globe-Flower<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="240"> Golden Seal<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="241"> Black Cohosh/Bugbane<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="242"> Red Baneberry<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="243"> White Baneberry/Doll's Eyes<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="244"> Virgin's-Bower<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="245"> Purple Clematis/Purple Virgins-Bower<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="246"> Columbine<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="247"> Monkshood<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="248"> Tall Larkspur<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="249"> Prairie Larkspur<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="250"> Grass-of-Parnassus<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="251"> Naked Miterwort/Naked Bishop's Cap<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="252"> Miterwort/Bishop's Cap<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="253"> Foamflower/False Miterwort<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="254"> Early Saxifrage<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="255"> Swamp Saxifrage<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="256"> Alumroot<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="257"> Ditch Stonecrop<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="258"> Four-O'Clock<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="259"> Pokeweed/Poke/Pokeberry<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="260"> Wing-angled Loosestrife<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="261"> Purple or Spiked Loosestrife<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="262"> Water-Willow<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="263"> Pitcher-Plant<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="264"> Leather-Flower<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="265"> Thread-Leaved Sundew<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="266"> Spatulate-Leaved Sundew<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="267"> Round-Leaved Sundew<BR>
+
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="268"> Corn-Cockle<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="269"> Deptford Pink<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="270"> Bouncing Bet/Soapwort<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="271"> Evening Lychnis/White Campion<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="272"> Bladder Campion<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="273"> Fire Pink<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="274"> Wild Pink<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="275"> Starry Campion<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="276"> Sleepy Catchfly<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="277"> Field Chickweed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="278"> Mouse-Eared Chickweed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="279"> Lesser Stitchwort<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="280"> Long-Leaved Chickweed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="281"> Rock Sandwort<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="282"> Grove or Blunt-Leaved Sandwort<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="283"> Jacob's-Ladder<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="284"> Periwinkle<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="285"> Blue Phlox<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="286"> Garden or Fall Phlox<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="287"> Downy Phlox<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="288"> Moss Phlox/Moss-Pink<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="289"> Bird's-Eye or Canadian Primrose<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="290"> Shooting-Star<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="291"> Starflower<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="292"> Scarlet or Common Pimpernel<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="293"> Moneywort<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="294"> Fringed Loosestrife<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="295"> Whorled Loosestrife<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="296"> Yellow Loosestrife/Swamp Candles<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="297"> Northern or Bush Honeysuckle<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="298"> Feverwort/Tinker's-Weed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="299"> Twinflower<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="300"> Common Milkweed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="301"> Blunt-Leaved Milkweed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="302"> Poke Milkweed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="303"> Swamp Milkweed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="304"> Purple Milkweed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="305"> Four-Leaved Milkweed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="306"> Whorled Milkweed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="307"> Butterfly-Weed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="308"> Indian Hemp<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="309"> Spreading Dogbane<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="310"> Blue Vervain<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="311"> Bracted Vervain<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="312"> White Vervain<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="313"> Hoary Vervain<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="314"> Virginia Waterleaf<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="315"> Appendaged Waterleaf<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="316"> Bastard-Toadflax<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="317"> Hoary Puccoon<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="318"> True Forget-Me-Not<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="319"> Miami-Mist/Scorpionweed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="320"> Viper's Bugloss<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="321"> Hound's-Tongue<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="322"> Mertensia/Virginia Cowslip<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="323"> Wild Potato-Vine<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="324"> Upright or Low Bindweed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="325"> Hedge Bindweed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="326"> Field Bindweed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="327"> Dodder<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="328"> Clammy Ground-Cherry<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="329"> Virginia Ground-Cherry<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="330"> Common Black Nightshade<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="331"> Nightshade/Bittersweet<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="332"> Horse-Nettle<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="333"> Jimsonweed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="334"> Wild Cucumber/Balsam-Apple<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="335"> Lance-Leaved Violet<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="336"> Sweet White Violet<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="337"> Common Blue Violet<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="338"> Wooly Blue Violet<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="339"> Great-Spurred Violet<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="340"> Marsh Blue Violet<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="341"> Round-Leaved Yellow Violet<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="342"> Canada Violet<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="343"> Downy Yellow Violet<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="344"> Northern Downy or Ovate-Leaved Violet<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="345"> Arrow-Leaved Violet<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="346"> Early Blue or Wood Violet<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="347"> Prairie Violet<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="348"> Birdfoot Violet<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="349"> Venus' Looking-Glass<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="350"> Marsh Bellflower<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="351"> Harebell<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="352"> Bedstraw or Roving Bellflower<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="353"> Tall Bellflower<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="354"> Brook Lobelia<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="355"> Indian-Tobacco<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="356"> Pale-Spike Lobelia<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="357"> Great Lobelia<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="358"> Cardinal-Flower<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="359"> Moth Mullein<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="360"> Common Mullein<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="361"> Purple Gerardia<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="362"> Yellow False Foxglove<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="363"> Fern-Leaved False Foxglove<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="364"> Swamp Lousewort<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="365"> Wood-Betony/Lousewort<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="366"> Painted-Cup/Indian Paintbrush<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="367"> Turtlehead<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="368"> Beardtongue<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="369"> Hairy Beardtongue<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="370"> Blue-Eyed Mary<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="371"> Blue or Old-Field Toadflax<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="372"> Butter-and-Eggs/Toadflax<BR>
+
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="373"> Square-Stemmed Monkey-Flower<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="374"> Cow-Wheat<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="375"> Thyme-Leaved Speedwell<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="376"> American Brooklime<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="377"> Culver's Root<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="378"> Figwort<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="379"> Lopseed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="380"> False Nettle/Bog-Hemp<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="381"> Horse-Balm/Richweed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="382"> Bluecurls<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="383"> False Dragonhead/Obedient Plant<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="384"> Mountain-Mint<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="385"> Gill-Over-The-Ground/Ground Ivy<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="386"> Wild or Field Mint<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="387"> Peppermint<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="388"> American Pennyroyal<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="389"> Heal-All/Selfheal<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="390"> Water-Horehound<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="391"> Motherwort<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="392"> Catnip<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="393"> Basil<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="394"> Marsh or Common Skullcap<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="395"> Mad-Dog Skullcap<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="396"> Germander/Wood-Sage<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="397"> Woundwort<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="398"> Downy Wood-Mint<BR>
+
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="399"> Horsemint<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="400"> Wild Bergamot<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="401"> Bee-Balm/Oswego-Tea<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="402"> Lizard's-Tail/Water-Dragon<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="403"> Lamb's-Quarters/Pigweed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="404"> Curled Dock<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="405"> Sheep or Common Sorrel<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="406"> Jointweed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="407"> Prostrate Knotweed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="408"> Water Smartweed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="409"> Pennsylvania Smartweed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="410"> Arrow-Leaved Tearthumb<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="411"> Climbing False Buckwheat<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="412"> Racemed Milkwort<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="413"> Seneca Snakeroot<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="414"> Fringed Polygala/Gaywings<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="415"> Beechdrops<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="416"> Squawroot<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="417"> One-Flowered Cancer-Root<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="418"> Spotted Touch-Me-Not/Jewelweed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="419"> Pale Touch-Me-Not/Jewelweed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="420"> Greater Bladderwort<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="421"> Purple Bladderwort<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="422"> Bloodroot<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="423"> Celandine-Poppy/Wood-Poppy<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="424"> Celandine<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="425"> Dutchman's-Breeches<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="426"> Squirrel-Corn<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="427"> Allegheny-Vine/Climbing Fumitory<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="428"> Pale Corydalis<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="429"> Golden Corydalis<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="430"> Showy Tick-Trefoil<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="431"> Naked-Flowered Tick-Trefoil<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="432"> Pointed-Leaved Tick-Trefoil<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="433"> Hog-Peanut<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="434"> Trailing Wild Bean<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="435"> Groundnut<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="436"> Wild Indigo<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="437"> Wild Lupine<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="438"> Beach Pea<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="439"> Cream-Colored Vetchling<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="440"> Vetchling/Marsh Pea<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="441"> Veiny Pea<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="442"> Hairy or Winter Vetch<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="443"> Cow or Tufted Vetch<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="444"> Purple or American Vetch<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="445"> Goat's-Rue<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="446"> Crown-Vetch/Axseed/Coronilla<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="447"> Wild Senna<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="448"> Partridge-Pea<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="449"> White Sweet Clover/Melitot<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="450"> Yellow Sweet Clover<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="451"> Bush-Clover<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="452"> Round-Headed Bush-Clover<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="453"> Alfalfa/Lucerne<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="454"> Black Medick<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="455"> Hop Clover<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="456"> Smaller Hop Clover<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="457"> Rabbit's-Foot Clover<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="458"> Alsike Clover<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="459"> Red Clover<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="460"> White Clover<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="461"> Twinleaf<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="462"> May-Apple/Mandrake<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="463"> Blue Cohosh<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="464"> Spatterdock/Yellow Pond-Lily<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="465"> Fragrant Water-Lily<BR>
+
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="466"> American Lotus/Nelumbo<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="467"> Prickly-Pear<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="468"> Common Teasel (sylvestris)<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="469"> Lance-Leaved Coreopsis/Tickseed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="470"> Stiff Coreopsis<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="471"> Gray-Headed or Prairie Coneflower<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="472"> Black-Eyed Susan<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="473"> Thin-Leaved or Three-Lobed Coneflower<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="474"> Green-Headed or Tall Coneflower<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="475"> Purple Coneflower<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="476"> Sneezeweed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="477"> Ox-Eye<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="478"> Tall or Giant Sunflower<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="479"> Woodland Sunflower<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="480"> Thin-Leaved or Ten-Rayed Sunflower<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="481"> Common Sunflower<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="482"> Elecampane<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="483"> Cup-Plant<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="484"> Prairie-Dock<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="485"> Compass-Plant<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="486"> Tickseed-Sunflower (coronata)<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="487"> Beggar-Ticks/Sticktight<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="488"> Bur-Marigold/Sticktight<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="489"> Pineapple-Weed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="490"> Mayweed/Dog Fennel<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="491"> Ox-Eye Daisy<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="492"> Maryland Golden-Aster<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="493"> Rough Hawkweed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="494"> Orange Hawkweed/Devil's Paintbrush<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="495"> Ragwort<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="496"> Dwarf Dandelion<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="497"> Two-Flowered Cynthia<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="498"> Yellow Goat's-Beard/Salisify<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="499"> Coltsfoot<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="500"> Common Dandelion<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="501"> Field Sow-Thistle<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="502"> Chicory<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="503"> Wild Lettuce<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="504"> White Lettuce/Rattlesnake Root<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="505"> Pale Indian-Plantain<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="506"> Upland White Aster<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="507"> Heath Aster<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="508"> Flat-Topped White Aster<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="509"> Purple Stemmed Aster<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="510"> New England Aster<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="511"> Stiff Aster<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="512"> Arrow-Leaved Aster<BR>
+
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="513"> Smooth Aster<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="514"> Large-Leaved or Bigleaf Aster<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="515"> Robin-Plantain<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="516"> Common or Philadelphia Fleabane<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="517"> Daisy Fleabane (strigosus)<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="518"> Caltrops/Star-Thistle<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="519"> Bull Thistle<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="520"> Field Thistle<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="521"> Swamp Thistle<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="522"> Canada Thistle<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="523"> Tall Thistle<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="524"> Cylindric Blazing-Star<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="525"> Rough Blazing-Star<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="526"> Prairie Blazing-Star/Prairie Gayfeather<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="527"> Dense Blazing-Star/Gayfeather<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="528"> Zigzag or Broad-Leaved Goldenrod<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="529"> Gray or Old Field Goldenrod<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="530"> Showy Goldenrod<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="531"> Lance-Leaved or Grass-Leaved Goldenrod<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="532"> Early Goldenrod<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="533"> Silver-Rod or White Goldenrod<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="534"> Canada Goldenrod<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="535"> Late or Smooth-Stem Goldenrod<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="536"> Hard-Leaved or Stiff Goldenrod<BR>
+
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="537"> Common Burdock<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="538"> New York Ironweed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="539"> Bachelor's-Button/Cornflower<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="540"> Tall Ironweed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="541"> Sweet Joe-Pye-Weed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="542"> Spotted Joe-Pye-Weed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="543"> Purple Boneset<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="544"> White Snakeroot<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="545"> Climbing Hempweed/Climbing Boneset<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="546"> Pearly Everlasting<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="547"> Sweet Everlasting/Catfoot<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="548"> Plantain-Leaved Pussytoes<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="549"> Common Tansy<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="550"> Yarrow/Milfoil<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="551"> Common Ragweed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="552"> Tall Wormwood<BR>
+<P>
+<INPUT type="submit" value="     Create a Quiz     " align="middle">
+
+
+<P>
+If you want to clear your choices, hit <input type="reset" name="mybutton" value="Reset">
+</form>
+<HR>
+I started this project back in 1984, believe it or not, and am doing it purely for fun.
+If you like this program enough to feel like showing your appreciation, please consider
+<a href="http://www.plantations.cornell.edu/get-involved/membership">becoming a member</a> or
+<a href="http://www.plantations.cornell.edu/get-involved/giving">giving a tax-deductible charitable contribution</a>
+to the <a href="http://www.plantations.cornell.edu/">Cornell Plantations</a>.
+I have no affiliation with this fine institution; rather, I was married many years ago
+in their beautiful herb garden.
+<P>
+<I>last updated July 2, 2009<BR>
+<a href="http://www.erichaines.com/">Eric Haines</a>,
+<a href="mailto:erich@acm.org">erich@acm.org</a></I>
+</form>
+</body>

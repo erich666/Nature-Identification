@@ -1,0 +1,299 @@
+<html>
+<head>
+   <meta name="description" content="Tree Quiz">
+   <meta name="keywords" content="tree, identification, field guide, quiz, test">
+   <title>Tree Quiz</title>
+</head>
+<body>
+<h1>Tree Quiz</h1>
+
+
+This page lets you set up a quiz about trees that you can take. You can tailor it to your particular preferences, or just hit "Create a Quiz"
+and take a general test. There are also quiz programs for <a href="../flowers/flowerquiz.html">wildflowers</a> and <a href="../birds/birdquiz.html">birds</a>.
+<P>
+If you are more interested in identifying trees, see the <a href="trees.html">tree identification page</a>.
+
+
+<form action="http://www.realtimerendering.com/cgi-bin/trees.cgi" method="POST" name="Tree">
+<P>
+<INPUT type="submit" value="     Create a Quiz     " align="middle">
+<P>
+How many questions would you like to answer?<BR>
+&nbsp;&nbsp;<SELECT NAME="quiz"> 
+<OPTION>2 
+<OPTION SELECTED>5 
+<OPTION>10 
+<OPTION>20 
+<OPTION>50 
+</SELECT>
+
+
+<P>
+You can choose the types of questions you want to answer:<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="qt" value="1" CHECKED> Yes/No questions<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="qt" value="2" CHECKED> Which tree has this characteristic?<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="qt" value="3" CHECKED> Which characteristic does this tree have?<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="qt" value="4" CHECKED> For these two characteristics, which tree has both?<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="qt" value="5" CHECKED> For these two trees, which characteristic is common to both?<BR>
+<P>
+You can select which characteristics you wish to be quizzed on:<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="c" value="1-4" CHECKED>Needles per Cluster<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="c" value="5-9" CHECKED>Single Needles<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="c" value="10-13" CHECKED>Length of Needles<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="c" value="14-15" CHECKED>Flattened Needles<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="c" value="16-19" CHECKED>Length of Cones<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="c" value="20-28" CHECKED>Fruit<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="c" value="29-29" CHECKED>Thorns<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="c" value="30-31" CHECKED>Leaf Edges<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="c" value="32-33" CHECKED>Leaf Arrangement on Twig<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="c" value="34-45" CHECKED>Simple Leaves Only<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="c" value="46-50" CHECKED>Compound Leaves Only<BR>
+<P>
+<INPUT type="submit" value="     Create a Quiz     " align="middle"> or you can clear your choices by hitting <input type="reset" name="mybutton" value="Reset">
+<P>
+You can choose what types of trees you would like to be quizzed on, as a group.
+Checking a characteristic in a group means trees in that group will be used for making questions.
+If you check a number of characteristics in one group (e.g. Needles per Cluster), trees with either of those characteristics will
+be part of the group (not just trees with both characteristics). If you check characteristics in different
+groups, the set of trees for each separate group is found, then trees that are common to all sets are used.
+
+Technically, within a group it's
+"characteristics OR char. OR char." and overall it's "group AND group AND group".
+<P>
+Yes, this all sounds confusing, but the idea is that you can choose to be tested on trees that have in common
+two or more specific sets of characteristics from different groups. For example, if this program were for house types,
+there might be two groups, <i>Number of Stories</i> and <i>Exterior Wall Material</i>. You could pick the characteristic
+"one-story" from the first group, and "stucco" and "brick" from the second, and the group of all houses used would then be
+"one-story AND (either stucco OR brick)".
+Try it out and see.
+<P>
+Check the characteristics below:
+<BR>
+<i>Needles per Cluster</i><BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="1"> Two needles per cluster<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="2"> Three needles per cluster<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="3"> Five needles per cluster<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="4"> Twelve or more needles per cluster<BR>
+<i>Single Needles</i><BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="5"> Needles 4-angled in cross-section<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="6"> On peg-like bases, twigs remain rough even after needles removed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="7"> Round needle-scars on twig, twigs rather smooth after needles removed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="8"> Some needles scale-like<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="9"> Some needles 3-angled (V) in cross-section<BR>
+<i>Length of Needles</i><BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="10"> Length of Needles less than 1"<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="11"> Length of Needles 1-2"<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="12"> Length of Needles 1 1/2-3"<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="13"> Length of Needles 3" or more<BR>
+<i>Flattened Needles</i><BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="14"> Flattened needles have 2 white lines beneath<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="15"> Flattened needles have no white lines beneath<BR>
+<i>Length of Cones</i><BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="16"> Length of cones 1" or less<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="17"> Length of cones 1-2"<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="18"> Length of cones 1 1/2-3"<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="19"> Length of cones 3" or more<BR>
+<i>Fruit</i><BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="20"> Conifer fruit is Berry-like<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="21"> Fruit is an acorn<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="22"> Fruit is a capsule<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="23"> Fruit is winged<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="24"> Fruit is a catkin<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="25"> Fruit is seed-like or a prickly ball<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="26"> Fruit is a nut<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="27"> Fruit is a pod<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="28"> Deciduous fruit is berry-like or fleshy<BR>
+<i>Thorns</i><BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="29"> Tree has Thorns<BR>
+<i>Leaf Edges</i><BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="30"> Leaf edges are untoothed (no small teeth)<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="31"> Leaf edges are saw-toothed<BR>
+<i>Leaf Arrangement on Twig</i><BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="32"> Leaf Arrangement is opposite<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="33"> Leaf Arrangement is alternate<BR>
+<i>Simple Leaves Only</i><BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="34"> Leaves have a heart-shaped base<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="35"> Leaves have a "V"-shaped base<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="36"> Leaves have a fairly equal base<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="37"> Leaves have a lopsided base<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="38"> Leaves are about as long as broad<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="39"> Leaves are about 1 1/2-3 times as long as broad<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="40"> Leaves are more than 3 times as long as broad<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="41"> Leaves are not lobed<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="42"> Leaves have palmate lobes<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="43"> Leaves have pinnate lobes with bristle tips<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="44"> Leaves have pinnate round lobes<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="45"> Leaves have a flat petiole<BR>
+<i>Compound Leaves Only</i><BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="46"> Number of pinnate leaflets for compound leaves is mostly 3<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="47"> Number of pinnate leaflets for compound leaves is mostly 5<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="48"> Number of pinnate leaflets for compound leaves is mostly 7-9<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="49"> Number of pinnate leaflets for compound leaves is 10 or more<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="g" value="50"> Compound leaves have palmate leaflets<BR>
+<P>
+<INPUT type="submit" value="     Create a Quiz     " align="middle"> or you can clear your choices by hitting <input type="reset" name="mybutton" value="Reset">
+<P>
+Finally, if you're really into tailoring, you can pick the trees on which to be tested.
+These will be added to any trees selected using the characteristics above.
+Don't check any if you want to be tested on all trees.
+Otherwise, check the ones you want:
+<P>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="1"> Jack Pine/Gray Pine<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="2"> Virginia Pine<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="3"> Scotch Pine<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="4"> Table Mountain Pine/Hickory Pine<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="5"> Shortleaf Pine<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="6"> Austrian Pine/European Black Pine<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="7"> Red Pine<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="8"> Pitch Pine<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="9"> Pond Pine/Marsh Pine/Pocosin Pine<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="10"> Loblolly Pine/Oldfield Pine/North Carolina Pine<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="11"> Longleaf Pine<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="12"> Eastern White Pine<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="13"> Tamarack/Hackmatack/Eastern Larch<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="14"> European Larch<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="15"> Eastern Hemlock/Canadian Hemlock<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="16"> Carolina Hemlock<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="17"> Balsam Fir/Eastern Fir<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="18"> Fraser's Fir/She-balsam<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="19"> Baldcypress/Cypress/Swamp-cypress<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="20"> American Yew<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="21"> Japanese Yew<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="22"> Black Spruce/Bog Spruce/Black Spruce<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="23"> Red Spruce/Eastern Spruce/Yellow Spruce<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="24"> White Spruce/Canadian Spruce/Skunk Spruce<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="25"> Norway Spruce<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="26"> Colorado Spruce<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="27"> Northern White-cedar/Eastern White-cedar/Eastern Arborvitae<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="28"> Atlantic White-cedar/Southern White-cedar/Swamp-cedar<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="29"> Dwarf Juniper<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="30"> Eastern Redcedar/Red Juniper<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="31"> Chinese Juniper<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="32"> Common Juniper<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="33"> Redbud<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="34"> Princess Tree<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="35"> Common Catalpa/Catawba<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="36"> Fraser Magnolia/Earleaf Magnolia<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="37"> Bigleaf Magnolia<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="38"> Sweetbay<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="39"> Cucumbertree<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="40"> Umbrella Magnolia<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="41"> Black Tupelo/Sour Gum<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="42"> Water Tupelo<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="43"> Pawpaw<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="44"> Persimmon<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="45"> Flowering Dogwood<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="46"> Osage Orange<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="47"> Shingle Oak<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="48"> Laurel Oak<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="49"> Live Oak<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="50"> Willow Oak<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="51"> Sourwood<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="52"> Russian Olive<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="53"> Willow<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="54"> Basswood<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="55"> Hackberry<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="56"> American Elm<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="57"> Slippery Elm<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="58"> Winged Elm/Cork Elm/Wahoo<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="59"> Lombardy Poplar<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="60"> Bigtooth Aspen<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="61"> Quaking Aspen/Golden Aspen<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="62"> Cottonwood<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="63"> Balsam Poplar/Tacamahac/Balm<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="64"> White Poplar/Silver Poplar<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="65"> Apple<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="66"> Prairie Crabapple<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="67"> Black Cherry<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="68"> Common Chokecherry<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="69"> Pin Cherry<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="70"> Carolina Laurelcherry<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="71"> American Plum<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="72"> American Holly<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="73"> Gray Birch<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="74"> River Birch<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="75"> Sweet Birch/Cherry Birch<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="76"> Yellow Birch/Silver Birch<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="77"> Paper Birch/Canoe Birch<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="78"> American Hornbeam/Blue-beech/Water-beech<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="79"> Eastern Hophornbeam/Ironwood<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="80"> Beech<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="81"> American Chestnut<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="82"> Hawthorns<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="83"> Red Mulberry<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="84"> White Mulberry<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="85"> Sassafras<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="86"> Ginkgo/Maidenhair-tree<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="87"> Water Oak/Possum Oak<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="88"> Blackjack Oak<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="89"> Chinkapin Oak<BR>
+
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="90"> Chestnut Oak<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="91"> Swamp White Oak<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="92"> Post Oak/Iron Oak<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="93"> Bur Oak/Blue Oak/Mossycup Oak<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="94"> White Oak/Stave Oak<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="95"> Overcup Oak/Swamp Post Oak/Water White Oak<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="96"> Pin Oak/Spanish Oak<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="97"> Northern Red Oak/Gray Oak<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="98"> Black Oak/Yellow Oak/Quercitron Oak<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="99"> Scarlet Oak<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="100"> Northern Pin Oak/Hill's Oak<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="101"> Tulip Tree<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="102"> Sycamore<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="103"> Sweet Gum<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="104"> Sugar Maple<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="105"> Black Maple<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="106"> Norway Maple<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="107"> Silver Maple<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="108"> Red Maple<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="109"> Sycamore Maple<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="110"> Striped Maple<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="111"> Mountain Maple<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="112"> Ohio Buckeye<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="113"> Yellow Buckeye/Sweet Buckeye<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="114"> Horsechestnut<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="115"> Boxelder<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="116"> Red Ash<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="117"> White Ash<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="118"> Blue Ash<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="119"> Black Ash<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="120"> Shagbark Hickory/Scalybark Hickory<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="121"> Pignut Hickory/Smoothbark Hickory<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="122"> Bitternut Hickory<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="123"> Shellbark Hickory/Kingnut<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="124"> Mockernut Hickory/White Hickory<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="125"> Pecan<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="126"> Butternut/White Walnut/Oilnut<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="127"> Black Walnut/American Walnut<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="128"> Staghorn Sumac<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="129"> Smooth Sumac<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="130"> Poison Sumac<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="131"> Ailanthus<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="132"> American Mountain-Ash<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="133"> European Mountain-Ash<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="134"> Yellow Wood<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="135"> Honey Locust<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="136"> Black Locust<BR>
+&nbsp;&nbsp;<INPUT type="checkbox" name="o" value="137"> Kentucky Coffeetree<BR>
+<P>
+<INPUT type="submit" value="     Create a Quiz     " align="middle">
+
+
+<P>
+If you want to clear your choices, hit <input type="reset" name="mybutton" value="Reset">
+</form>
+<HR>
+I started this project back in 1984, believe it or not, and am doing it purely for fun.
+If you like this program enough to feel like showing your appreciation, please consider
+<a href="http://www.plantations.cornell.edu/get-involved/membership">becoming a member</a> or
+<a href="http://www.plantations.cornell.edu/get-involved/giving">giving a tax-deductible charitable contribution</a>
+to the <a href="http://www.plantations.cornell.edu/">Cornell Plantations</a>.
+I have no affiliation with this fine institution; rather, I was married many years ago
+in their beautiful herb garden.
+<P>
+<I>last updated July 2, 2009<BR>
+<a href="http://www.erichaines.com/">Eric Haines</a>,
+<a href="mailto:erich@acm.org">erich@acm.org</a></I>
+</form>
+</body>
